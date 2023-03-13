@@ -1,0 +1,101 @@
+body { font-family: "Times New Roman", sans-serif; cursor: default; }
+
+header
+{
+  height: 80px; background: #343A40;
+  .logo
+  {
+    margin: 28px 0 0 20px;
+    svg { height: 30px; width: 180px; color: white; }
+  }
+  nav
+  {
+    margin-top: 20px;
+    .nav-link
+    {
+      color: grey;
+      span { padding-bottom: 4px; }
+      span:hover { color: white; border-bottom: 1px solid white; }
+    }
+    .nav-link:hover { color: grey; }
+
+    .active { color: white !important; }
+  }
+}
+
+main
+{
+  height: calc(100vh - 140px); overflow-x: scroll;
+  .page-title
+  {
+    margin: 25px 0 10px 0; font-size: 22px; text-align: center; padding-bottom: 5px;
+    span { border-bottom: 1px solid black; }
+  }
+
+  .error
+  {
+    margin-top: 300px; text-align: center; line-height: 1;
+    .num { font-size: 100px; }
+    .text { font-weight: bold; }
+  }
+
+  .input-group-text { padding: 0 22px; font-weight: bold; width: 100px; text-align: center; border-radius: 5px 0 0 5px; border-right: 0; }
+
+  .group-select, .add-btn { padding-bottom: 5px; }
+  .add-btn
+  {
+    width: 180px; margin: auto;
+    input { width: 100%; }
+  }
+
+  table
+  {
+    margin-top: 15px;
+    thead, td { text-align: center; }
+    td { line-height: 3; }
+    .td-input
+    {
+      width: 150px;
+      input { width: 100%; }
+    }
+  }
+
+  .alert { text-align: center; font-weight: bold; }
+  .modal-alert { margin-bottom: 0 !important; }
+  .estimate-alert { margin-top: 15px; }
+
+  .alert-danger
+  {
+    a { padding-bottom: 2px; border-bottom: 1px solid #721C24; text-decoration: none; color: #721C24; }
+  }
+
+
+  .modal
+  {
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 80px;
+    .title { width: 100%; text-align: center; font-weight: bold; font-size: 20px; }
+    .input-row
+    {
+      padding: 5px 0;
+      .col-4
+      {
+        padding: 0 0 0 15px;
+        .label-div
+        {
+          border-bottom: 1px solid #DEE2E6;
+          label { margin: 8px 0 5px 2px; font-weight: bold; }
+        }
+      }
+      .col-8 { padding: 0 15px 0 0; }
+    }
+
+  }
+}
+
+
+footer
+{
+  position: fixed; bottom: 0; left: 0; width: 100%; height: 42px; text-align: center; background: #343A40; color: white; padding: 10px 0;
+}
+
